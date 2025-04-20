@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -62,13 +61,10 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="container mx-auto flex justify-center items-center min-h-[calc(100vh-80px)]">
+    <div className="container mt-4 mx-auto flex justify-center items-center min-h-[calc(100vh-80px)]">
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>
-          <CardDescription>
-            Enter your credentials to access your account
-          </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>
           <CardContent className="space-y-4">
